@@ -100,7 +100,6 @@ export default {
             api.register({
                 params: this.registerForm
             }).then(res=>{
-                console.log(res)
                 if(res.data.status == 'success') {
                     this.$router.push({name: 'login'});
                 }else {
@@ -108,7 +107,6 @@ export default {
                 }
             });
           } else {
-            console.log('error submit!!');
             return false;
           }
         });

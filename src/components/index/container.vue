@@ -47,7 +47,6 @@ export default {
   },
   created () {
     api.getResultProducts().then(res => {
-
       this.resultsData = res.data.data;
       this.kind = this.nav.list[0].tab;
     })

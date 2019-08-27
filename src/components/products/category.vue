@@ -36,7 +36,7 @@ export default {
       this.classicLlist = res.data.data;
     });
     api.getAreaList().then(res=>{
-      this.areaList = JSON.parse(res.data+']}').data;
+      this.areaList = res.data.data;
     });
   }
 };

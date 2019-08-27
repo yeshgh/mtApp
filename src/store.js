@@ -1,32 +1,31 @@
-import Vue from "vue"
-import Vuex from "vuex"
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 const state = {
-    position: {},
-    userName: '',
-};
+  position: {},
+  userName: ''
+}
 
 const mutations = {
-    setPosition (state, val) {
-        state.position = val;
-    },
-    setUserName(state, val) {
-        state.userName = val;
-    }
-};
+  setPosition (state, val) {
+    state.position = val
+  },
+  setUserName (state, val) {
+    state.userName = val
+  }
+}
 
 const actions = {
-    setPosition({commit}, val) {
-        // 异步请求后端获取当前位置数据
-        commit('setPosition',val);
-    }
-};
+  setPosition ({commit}, val) {
+    // 异步请求后端获取当前位置数据
+    commit('setPosition', val)
+  }
+}
 
 export default new Vuex.Store({
-    state,
-    mutations,
-    actions
+  state,
+  mutations,
+  actions
 })
-

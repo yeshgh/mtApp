@@ -11,7 +11,7 @@ import Register from '@/page/register'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',  
+  // mode: 'history',
   routes: [
     {
       path: '/',
@@ -23,11 +23,13 @@ export default new Router({
           path: 's/:name/',
           name: 'goods',
           component: goodsList
-        },{
+        },
+        {
           path: 'index',
           name: 'index',
           component: Index
-        },{
+        },
+        {
           path: '/changeCity',
           name: 'changeCity',
           component: changeCity
@@ -43,12 +45,13 @@ export default new Router({
           path: 'login',
           name: 'login',
           component: Login
-        },{
+        },
+        {
           path: 'register',
           name: 'register',
           component: Register
         }
       ]
-    },
+    }
   ]
 })
